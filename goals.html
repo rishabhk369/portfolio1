@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="profile picture.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="profile picture.jpeg">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">RK</a>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="essays.html">essays</a>
+            <a href="experience.html">work experience</a>
+            <a href="bookshelf.html">bookshelf</a>
+            <a href="goals.html">goals</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1 class="title">my <span class="highlight-words">goals</span> for 2025</h1>
+        <p class="bio">
+            i am a firm believer in setting actionable short-term goals that pave the way for <span class="highlight-words">long-term success.</span> by breaking down larger aspirations into manageable milestones, i create a clear pathway toward achieving my <span class="highlight-words">long-term objectives.</span> if you believe that you can help me achieve any of my below mentioned goals, feel free to reach out via <a href="mailto:rishabh.karanawat.2114@gmail.com" class="bio-link">gmail</a> or schedule a <a href="@https://cal.com/rishabh-karnawat-vbrvap" class="bio-link">call</a>.
+
+        </p>
+        <ul class="goals-list">
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                pass out ibdp with a good score
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                get into a good university
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                make a portfolio of 2 apps and publish them
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                reach an mrr of 25,000 dollars
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                find 2 good co-founders to work with
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                get jacked
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                read 30 books
+            </li>
+            <li class="goal-item">
+                <input type="checkbox" class="goal-checkbox">
+                become a cracked coder
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="index.html" class="footer-logo">RK</a>
+        <p class="copyright">Copyright © 2024 Rishabh Karnawat. All Rights Reserved.</p>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        // Hamburger click handler
+        hamburger.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent click from immediately bubbling to document
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+    
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            });
+        });
+    
+        // Close menu when clicking anywhere else on the document
+        document.addEventListener("click", (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        });
+    
+        // Prevent clicks inside the menu from closing it
+        navLinks.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>essays</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="profile picture.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="profile picture.jpeg">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">RK</a>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="essays.html">essays</a>
+            <a href="experience.html">work experience</a>
+            <a href="bookshelf.html">bookshelf</a>
+            <a href="goals.html">goals</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <img src="essay image.jpeg" alt="Essays" class="profile-image">
+        <h1 class="title">i love <span class="highlight-words">writing.</span> here are few essays written by me:)</h1>
+        
+        
+        <div class="essay-list">
+            <div class="essay-item">
+                <div class="essay-title">enjoy and embrace pain</div>
+                <div class="essay-content">
+                    <p class="essay-date">13 may, 2024</p>
+                    <p class="bio">
+                        i know so many people in life who have immense potential, but the only thing that holds them back is giving up early. i understand it is painful to keep going without immediate results, but your potential is only useful when you don't give up.
+                        <br><br>
+                        i know so many people in life who have immense potential, but the only thing that holds them back is giving up early. i understand it is painful to keep going without immediate results, but your potential is only useful when you don't give up.
+                        <br><br>
+                        life is all about work. work 7 days a week, 12 hours a day, and take no off days or breaks. keep this mindset and you will achieve what you want. enjoy the painful routine. life is all about pain. discipline is painful, but indiscipline is much more painful. remember:
+                        <br><br>
+                        marriage is hard. divorce is hard. choose your hard.
+                        <br><br>
+                        obesity is hard. being fit is hard. choose your hard.
+                        <br><br>
+                        being in debt is hard. being financially disciplined is hard. choose your hard.
+                        <br><br>
+                        communication is hard. not communicating is hard. choose your hard.
+                        <br><br>
+                        life will never be easy. it will always be hard. but we can choose our hard. pick wisely. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="essay-item">
+                <div class="essay-title">either you are capable or incapable.</div>
+                <div class="essay-content">
+                    <p class="essay-date">1 june, 2024</p>
+                    <p class="bio">
+                        recently, i watched the movie "srikant," where a blind man overcomes incredible odds to reach mit (usa) and then gives up a promising career there to start his own business in india. this story inspired me deeply and prompted me to write the following thoughts.
+                        
+                        <br><br>
+                        every time you don't get into the university you dreamed of, land the job you desperately sought, win the heart of the person you prayed for, or achieve the success you hoped for in your startup or business, it all boils down to one simple conclusion: either you are capable or incapable. there are no excuses.
+                        <br><br>
+                        you can't blame your parents for not raising you well, or life for constantly showering problems at you. if a blind man can get into mit, leave behind an outstanding career in america, and start a successful business in india, it proves beyond a doubt that it's all about capability. if you are capable enough, you can achieve anything you want in life.
+                        <br><br>
+                        excuses and blame are for the weak. if you're not capable enough yet, then take the necessary steps to build yourself up to become capable. that's how you succeed. remember, it's all within your reach if you have the determination and the will to grow. stop giving excuses.
+                        <br><br>
+
+
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="essay-item">
+                <div class="essay-title">delayed gratification</div>
+                <div class="essay-content">
+                    <p class="essay-date">1st may, 2024</p>
+                    <p class="bio">
+                        1. warren buffett: began investing at age 11 and built his fortune over more than 70 years, emphasizing long-term strategies and compound interest.
+                        <br><br>
+                        2. jeff bezos: worked various roles for about 10 years before founding amazon in 1994, patiently growing it into a global giant over the next 30 years.
+                        <br><br>
+                        3. oprah winfrey: overcame early career setbacks in the 1970s and 1980s, ultimately building her media empire over a span of 40 years.
+                        <br><br>
+                        4. elon musk: spent nearly 20 years facing financial struggles and failures with spacex and tesla before achieving monumental success.
+                        <br><br>
+                        5. jack ma: faced around 20 years of rejections and failures before founding alibaba in 1999, which he grew over the next two decades.
+                        <br><br>
+                        6. ray kroc: worked as a milkshake machine salesman until his 50s, then spent over 30 years transforming mcdonald's into a global empire.
+                        <br><br>
+                        7. j.k. rowling: faced 7 years of rejection from publishers and financial difficulties before the harry potter series became a phenomenon, with her success continuing for over 20 years.
+                        <br><br>
+                        8. colonel harland sanders: after numerous business failures, he founded kfc in his 60s and spent the next 20 years turning it into a major global franchise.
+                        <br><br>
+                        you already know what i mean now. stop giving up easily. wire it in your brain that i have to work 12 hours a day, 7 days a week, 365 days a year, at least for next 20 years to become what i desire to be.
+                        
+
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        // Hamburger click handler
+        hamburger.addEventListener("click", (e) => {
+            e.stopPropagation();
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+    
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            });
+        });
+    
+        // Close menu when clicking anywhere else on the document
+        document.addEventListener("click", (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        });
+    
+        // Prevent clicks inside the menu from closing it
+        navLinks.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    
+        // Essay dropdown functionality
+        document.querySelectorAll('.essay-title').forEach(title => {
+            title.addEventListener('click', () => {
+                // Close all other essays first
+                document.querySelectorAll('.essay-title').forEach(otherTitle => {
+                    if (otherTitle !== title && otherTitle.classList.contains('active')) {
+                        otherTitle.classList.remove('active');
+                        const otherContent = otherTitle.nextElementSibling;
+                        otherContent.style.maxHeight = null;
+                    }
+                });
+                
+                // Toggle the clicked essay
+                title.classList.toggle('active');
+                const content = title.nextElementSibling;
+                
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+    <div class="footer">
+        <a href="index.html" class="footer-logo">RK</a>
+        <p class="copyright">Copyright © 2024 Rishabh Karnawat. All Rights Reserved.</p>
+    </div>
+</body>
+</html>

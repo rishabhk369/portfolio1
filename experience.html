@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="workex image.jpeg">
+    <link rel="shortcut icon" type="image/jpeg" href="workex image.jpeg">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">RK</a>
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="essays.html">essays</a>
+            <a href="experience.html">work experience</a>
+            <a href="bookshelf.html">bookshelf</a>
+            <a href="goals.html">goals</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <img src="workex image.jpeg" alt="Work Experience Image" class="profile-image">
+        <h1 class="experience-title">following is a brief overview of my <span class="highlight-words">diverse work experience:</span></h1>
+        <div class="experience-item">
+            <span class="experience-number">01</span>
+            <img src="marketing image.jpeg" alt="Marketing Internship" class="experience-image">
+            <h2 class="position-title">marketing intern</h2>
+            <p class="duration">january 2024 - april 2024</p>
+            <p class="bio">
+                as a marketing intern at matoshree realty, i developed and executed comprehensive digital marketing strategies, managed social media campaigns, and analyzed market trends. i collaborated with cross-functional teams to create engaging content, optimize website performance, and improve brand visibility. this role enhanced my understanding of digital marketing tools, analytics, and consumer behavior while developing strong project management skills.
+            </p>
+            <div class="experience-item">
+            <span class="experience-number">02</span>
+            <img src="law image.jpeg" alt="Law Firm Experience" class="experience-image">
+            <h2 class="position-title">paralegal</h2>
+            <p class="duration">june 2024 - july 2024</p>
+            <p class="bio">
+                during my internship at a prestigious unadkat and co.law firm, i gained invaluable exposure to corporate law and legal procedures. i assisted in drafting legal documents, conducted research on case laws, and participated in client consultations. this experience enhanced my understanding of legal frameworks, professional ethics, and the intricacies of corporate litigation. i also developed strong analytical and documentation skills while working alongside experienced lawyers.
+            </p>
+            
+            </div>
+        
+    </div>
+        <!-- You can add more bio paragraphs here with your work experience details -->
+    </div>
+    <div class="footer">
+        <a href="index.html" class="footer-logo">RK</a>
+        <p class="copyright">Copyright © 2024 Rishabh Karnawat. All Rights Reserved.</p>
+    </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+    
+        // Hamburger click handler
+        hamburger.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent click from immediately bubbling to document
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+    
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            });
+        });
+    
+        // Close menu when clicking anywhere else on the document
+        document.addEventListener("click", (e) => {
+            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+            }
+        });
+    
+        // Prevent clicks inside the menu from closing it
+        navLinks.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html> 
